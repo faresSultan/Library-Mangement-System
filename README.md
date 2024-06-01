@@ -8,9 +8,7 @@ This document describes a library management system implemented in C with two al
 * Delete books from the library by ID.
 * View a list of all books in the library.
 
-### Functionality (Array Implementation) (Commented Out)
-
-**Note:** This implementation is commented out as the project uses a singly-linked list data structure.
+### Functionality (Array Implementation)
 
 The system utilizes four arrays to store book information:
 
