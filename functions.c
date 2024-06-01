@@ -2,8 +2,8 @@
 
 
 struct Book {
-  u8 name[MAX_NAME_LENGTH];
-  u8 author[MAX_NAME_LENGTH];
+  u8 name[100];
+  u8 author[100];
   u32 bookId;
   f32 price;
   struct Book* next;
