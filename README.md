@@ -51,9 +51,6 @@ Functions are modified to work with the linked list:
 * Dynamic memory allocation: No fixed size limit for the number of books.
 * Efficient insertions and deletions: No need to shift elements in the list.
 
-**Trade-offs:**
-
-* Linked lists require more memory overhead compared to arrays due to the pointer in each node.
 
 ### Choosing the Right Implementation
 
