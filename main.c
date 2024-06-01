@@ -1,19 +1,9 @@
 # include "functions.h"
-#define MAX_BOOKS 100
-#define MAX_NAME_LENGTH 100
-
-
 
 
 int main()
 {
-	char choice ;
-	char password[] = "123";
-	char names[MAX_BOOKS][MAX_NAME_LENGTH];
-	char authors[MAX_BOOKS][MAX_NAME_LENGTH];
-	int bookIds[MAX_BOOKS];
-	float prices[MAX_BOOKS];
-	
+	u8 choice ;
 	printf("----------------------------------------------------- Welcome to your library -----------------------------------------------------\n\n\n");
 	while (1)
 	{
@@ -27,15 +17,15 @@ int main()
 		switch(choice)
 		{
 			case 1:
-			addBook( names, authors, bookIds, prices);
+			addBook();
 			break;
 			
 			case 2:
-			deleteBook(names,authors, bookIds,prices);
+			deleteBook();
 			break;
 			
 			case 3:
-			viewBooks(names, authors, bookIds,prices);
+			viewBooks();
 			break;
 			
 			case 4:
