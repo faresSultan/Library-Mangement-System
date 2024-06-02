@@ -37,6 +37,7 @@ void addBook() {
   newBook->next = head; // Make the new node point to the current head
   head = newBook; // Update the head to point to the new node
   printf("Book added successfully!\n");
+  printf("\n---------------------------------------------\n");
 }
 
 
@@ -57,6 +58,7 @@ void deleteBook() {
       }
       free(current); // Free the memory of the deleted node
       printf("Book with ID %d deleted successfully!\n", idToDelete);
+	  printf("\n---------------------------------------------\n");
       return;
     }
     previous = current;
@@ -64,6 +66,7 @@ void deleteBook() {
   }
 
   printf("Book with ID %d not found.\n", idToDelete);
+  printf("\n---------------------------------------------\n");
 }
 
 
@@ -71,6 +74,7 @@ void deleteBook() {
 void viewBooks() {
   if (head == NULL) {
     printf("No books in the system.\n");
+	printf("\n---------------------------------------------\n");
     return;
   }
 
