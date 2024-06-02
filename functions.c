@@ -1,22 +1,13 @@
 # include "functions.h"
-//extern char password[4];
 
 	int numBooks =0;
 	
-
-	//int validatePassword()
-	//{
-
-	//	return strcmp(password, enteredPassword);
-	//}
-
-
-
 void addBook(char names[][MAX_NAME_LENGTH], char authors[][MAX_NAME_LENGTH], int bookIds[], float prices[])
  {
     if (numBooks >= MAX_BOOKS)
     {
         printf("Maximum number of books reached!\n");
+		printf("---------------------------\n");
         return;
     }
 
@@ -34,6 +25,7 @@ void addBook(char names[][MAX_NAME_LENGTH], char authors[][MAX_NAME_LENGTH], int
 
     numBooks++;
     printf("Book added successfully!\n");
+	printf("---------------------------\n");
 }
 
 void deleteBook(char names[][MAX_NAME_LENGTH], char authors[][MAX_NAME_LENGTH], int bookIds[], float prices[])
@@ -57,6 +49,7 @@ void deleteBook(char names[][MAX_NAME_LENGTH], char authors[][MAX_NAME_LENGTH], 
             }
             numBooks--;
             printf("Book with ID %d deleted successfully!\n", idToDelete);
+			printf("---------------------------\n");
             break;
         }
     }
@@ -64,6 +57,7 @@ void deleteBook(char names[][MAX_NAME_LENGTH], char authors[][MAX_NAME_LENGTH], 
     if (!found)
         {
         printf("Book with ID %d not found.\n", idToDelete);
+		printf("---------------------------\n");
         }
 
 }
